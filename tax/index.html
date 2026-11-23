@@ -5,25 +5,57 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Tax Edition · Satish Paul Brief</title>
   <link rel="stylesheet" href="../assets/css/frontier-style.css">
-  <style>
-    body{font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;margin:0;color:#0b1b33;background:#f2f6fb}
-    .wrap{max-width:980px;margin:0 auto;padding:20px}
-    .box{background:#fff;border:1px solid #d9e2ef;border-radius:16px;padding:20px}
-    h1{margin:0 0 8px}
-    p{color:#4f6077}
-    .btn{display:inline-block;background:#0067b8;color:#fff;text-decoration:none;border-radius:999px;padding:10px 14px;font-weight:600}
-  </style>
+  <link rel="stylesheet" href="../assets/css/service-line-brief.css">
 </head>
-<body>
-  <div class="wrap">
-    <p><a href="../brief/">← Back to editions</a></p>
-    <section class="box">
-      <h1>Tax edition</h1>
-      <p>What’s new in Microsoft products that affects tax operations, compliance, planning, and advisory workflows.</p>
-      <p><a class="btn subscribe-link" href="#" data-industry="Tax">Subscribe to Tax</a></p>
+<body class="service-line-brief" data-industry="Tax">
+  <div class="sl-wrap">
+    <div class="sl-top">
+      <a href="../brief/">← Back to editions</a>
+      <div><a href="../manage-preferences/">Manage preferences</a> · <a href="../unsubscribe/">Unsubscribe</a></div>
+    </div>
+
+    <section class="sl-hero">
+      <img id="sl-hero-image" alt="Tax service line visual">
+      <div class="sl-hero-copy">
+        <span class="sl-kicker">Service-line briefing</span>
+        <h1>Tax announcements decoded</h1>
+        <p>Every Microsoft announcement below is rewritten for Tax teams, with explicit applicability to compliance, provision, and tax-technology transformation workflows.</p>
+        <div id="sl-chip-row" class="sl-chip-row"></div>
+        <a class="sl-btn subscribe-link" href="#" data-industry="Tax">Subscribe to Tax updates</a>
+      </div>
+    </section>
+
+    <section class="sl-controls">
+      <div class="sl-controls-grid">
+        <div class="sl-field">
+          <label for="sl-date">Filter by publish date</label>
+          <select id="sl-date"></select>
+        </div>
+        <div class="sl-field">
+          <label for="sl-search">Search announcements</label>
+          <input id="sl-search" type="search" placeholder="Search title, summary, or impact notes">
+        </div>
+        <div class="sl-nav">
+          <button id="sl-prev" type="button">Previous</button>
+          <button id="sl-next" type="button">Next</button>
+        </div>
+      </div>
+      <div id="sl-status" class="sl-meta"></div>
+      <div id="sl-count" class="sl-meta"></div>
+    </section>
+
+    <section class="sl-layout">
+      <aside class="sl-list">
+        <h2>Announcements</h2>
+        <p id="sl-empty" class="sl-empty">No announcements match this filter.</p>
+        <div id="sl-list-items"></div>
+      </aside>
+      <article id="sl-detail" class="sl-detail"></article>
     </section>
   </div>
+
   <script src="../assets/js/site-config.js"></script>
   <script src="../assets/js/powerplatform-subscriptions.js"></script>
+  <script src="../assets/js/service-line-brief.js"></script>
 </body>
 </html>

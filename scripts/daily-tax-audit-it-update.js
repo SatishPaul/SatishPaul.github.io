@@ -145,6 +145,59 @@ function whyItMatters(industry, matched, serviceLines) {
   return `Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (${top}).${sl}`;
 }
 
+function detailedWriteUp(industry, title, summary, serviceLines, matched) {
+  const signal = matched.slice(0, 2).join(" and ");
+  const lines = serviceLines.length ? `Primary fit: ${serviceLines.join(", ")}.` : "Primary fit: core service delivery workstreams.";
+  if (industry === "Tax") {
+    return `${summary} For Tax teams, this announcement can be translated into better compliance execution, stronger evidence continuity, and more scalable tax-technology operating models. ${lines} Key signal: ${signal}.`;
+  }
+  if (industry === "Audit") {
+    return `${summary} For Audit teams, this improves how controls are monitored, how evidence is gathered, and how assurance quality can be sustained across engagements. ${lines} Key signal: ${signal}.`;
+  }
+  if (industry === "Advisory") {
+    return `${summary} For Advisory teams, this can influence risk posture, transformation sequencing, and value-realization choices in client programs. ${lines} Key signal: ${signal}.`;
+  }
+  return `${summary} For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. ${lines} Key signal: ${signal}.`;
+}
+
+function applicationAngles(industry, serviceLines) {
+  const line = serviceLines[0] || industry;
+  if (industry === "Tax") {
+    return [
+      `Map ${line} opportunities where workflow automation or control evidence is still manual.`,
+      "Use this as a trigger to refine your tax-data governance and close-calendar playbook.",
+      "Package a pilot use case with measurable cycle-time and quality outcomes."
+    ];
+  }
+  if (industry === "Audit") {
+    return [
+      `Map ${line} use cases to strengthen control testing and evidence traceability.`,
+      "Prioritize engagements with recurring documentation bottlenecks.",
+      "Design an assurance-ready operating cadence with explicit quality checkpoints."
+    ];
+  }
+  if (industry === "Advisory") {
+    return [
+      `Position ${line} in transformation roadmaps tied to executive KPIs.`,
+      "Use this update in value-creation discussions for risk and performance outcomes.",
+      "Create a near-term pilot and define success metrics before scale-out."
+    ];
+  }
+  return [
+    `Apply ${line} to cloud, data, and AI delivery accelerators for current clients.`,
+    "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
+    "Embed this capability in managed-service offers and modernization sprints."
+  ];
+}
+
+function recommendedActions(industry) {
+  return [
+    `Add this announcement to your ${industry} weekly client update narrative.`,
+    "Identify one active engagement where this capability can be piloted immediately.",
+    "Prepare a client conversation starter focused on measurable business outcomes."
+  ];
+}
+
 async function fetchSource(source) {
   const res = await fetch(source.url, { headers: { "User-Agent": "SatishPaulBriefBot/1.0" } });
   if (!res.ok) throw new Error(`Fetch failed ${source.url}: ${res.status}`);
@@ -197,7 +250,10 @@ async function main() {
         name: s.industry,
         score: s.score,
         serviceLines,
-        whyItMatters: whyItMatters(s.industry, s.matched, serviceLines)
+        whyItMatters: whyItMatters(s.industry, s.matched, serviceLines),
+        detailedWriteUp: detailedWriteUp(s.industry, item.title, item.description, serviceLines, s.matched),
+        applicationAngles: applicationAngles(s.industry, serviceLines),
+        recommendedActions: recommendedActions(s.industry)
       };
     });
     filtered.push({
