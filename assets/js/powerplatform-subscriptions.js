@@ -47,15 +47,49 @@
 
   function openFallbackMailto(payload) {
     if (!fallbackTo) return false;
-    var subject = "Subscribe: Satish Paul Brief";
+    var subjectMap = {
+      subscribe: "Subscribe: Satish Paul Brief",
+      preferences: "Preferences update: Satish Paul Brief",
+      unsubscribe: "Unsubscribe: Satish Paul Brief"
+    };
+    var subject = subjectMap[payload.formType] || "Satish Paul Brief request";
     var body = [
-      "Please subscribe/update my preferences for Satish Paul Brief.",
+      "Please process this Satish Paul Brief request.",
+      "Form type: " + payload.formType,
       "Email: " + payload.email,
       "Industries: " + (payload.industries.join(", ") || "(none selected)"),
+      "Token: " + (payload.token || "(none)"),
       "Source: " + payload.source
     ].join("\n");
     location.href = "mailto:" + encodeURIComponent(fallbackTo) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     return true;
+  }
+
+  function normalizeIndustry(value) {
+    return String(value || "").trim().toLowerCase();
+  }
+
+  function prefillSubscribeFromUrl() {
+    var form = document.querySelector('form[data-pp-form="subscribe"]');
+    if (!form) return;
+    var params = new URLSearchParams(window.location.search || "");
+    var requestedIndustry = String(params.get("industry") || "").trim();
+    if (!requestedIndustry) return;
+
+    var matched = false;
+    Array.from(form.querySelectorAll('input[name="industries"]')).forEach(function (box) {
+      var shouldSelect = normalizeIndustry(box.value) === normalizeIndustry(requestedIndustry);
+      box.checked = shouldSelect;
+      matched = matched || shouldSelect;
+    });
+
+    if (!matched) return;
+
+    var source = form.querySelector('input[name="source"]');
+    if (source) source.value = "quick-subscribe-link";
+    setMessage(form, requestedIndustry + " is preselected. Enter your email to subscribe.", false);
+    var emailField = form.querySelector('input[name="email"]');
+    if (emailField) emailField.focus();
   }
 
   function wireForms() {
@@ -77,7 +111,7 @@
         try {
           if (!endpoint) {
             localStorage.setItem("satishBrief:lastPayload", JSON.stringify(payload));
-            if (formType === "subscribe" && openFallbackMailto(payload)) {
+            if (openFallbackMailto(payload)) {
               setMessage(form, "No flow URL configured yet. Opened email fallback.", false);
             } else {
               setMessage(form, "No flow URL configured yet. Saved your request locally in this browser.", false);
@@ -89,8 +123,8 @@
           form.reset();
         } catch (err) {
           console.error(err);
-          if (formType === "subscribe" && openFallbackMailto(payload)) {
-            setMessage(form, "Flow call failed; opened email fallback.", true);
+          if (openFallbackMailto(payload)) {
+            setMessage(form, "Could not reach the flow endpoint; opened email fallback.", false);
           } else {
             setMessage(form, "Could not complete request. Please try again.", true);
           }
@@ -104,14 +138,29 @@
       a.addEventListener("click", function (e) {
         e.preventDefault();
         var industry = a.getAttribute("data-industry");
-        var page = "brief/#subscribe";
-        if (window.location.pathname.indexOf("/brief/") >= 0) page = "#";
-        alert("Use the subscribe form to join " + industry + ".");
-        window.location.href = page;
+        var inBrief = window.location.pathname.indexOf("/brief/") >= 0;
+        if (inBrief) {
+          var form = document.querySelector('form[data-pp-form="subscribe"]');
+          if (form) {
+            Array.from(form.querySelectorAll('input[name="industries"]')).forEach(function (box) {
+              box.checked = normalizeIndustry(box.value) === normalizeIndustry(industry);
+            });
+            var source = form.querySelector('input[name="source"]');
+            if (source) source.value = "quick-subscribe-link";
+            setMessage(form, industry + " is preselected. Enter your email to subscribe.", false);
+            var emailField = form.querySelector('input[name="email"]');
+            if (emailField) emailField.focus();
+            var anchor = document.getElementById("subscribe");
+            if (anchor) anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+          return;
+        }
+        window.location.href = "../brief/?industry=" + encodeURIComponent(industry) + "#subscribe";
       });
     });
   }
 
+  prefillSubscribeFromUrl();
   wireForms();
   wireQuickSubscribeLinks();
 })();

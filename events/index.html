@@ -1,85 +1,199 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Events · The Microsoft Brief</title><!--fav--><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><meta name="theme-color" content="#ffffff"><!--/fav--><meta name="description" content="Event briefs and recaps: Convergence, Microsoft Ignite and Power Platform Community Conference. Public essentials plus follow-ups from your Microsoft team.">
-<meta property="og:title" content="Events · The Microsoft Brief"><meta property="og:description" content="Event briefs and recaps: Convergence, Microsoft Ignite and Power Platform Community Conference. Public essentials plus follow-ups from your Microsoft team."><meta property="og:image" content="https://nfratello.github.io/microsoft-brief/assets/img/events/convergence-hero.jpg?v=951328b1"><meta property="og:url" content="https://nfratello.github.io/microsoft-brief/events/"><meta name="twitter:card" content="summary_large_image">
-<style id="ev-css">h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
-p,li,figcaption,blockquote,q{text-wrap:pretty}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Satish Paul Brief · Landing</title>
+  <meta name="description" content="Microsoft updates decoded for Tax, Audit, Advisory, and IT Consulting.">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/frontier-style.css">
+  <style>
+    :root{--ink:#111827;--muted:#51607a;--line:#d7e0ee;--bg:#f3f7fc;--c1:#0b1f4d;--c2:#1d3f8f;--acc:#5db0ef;--hot:#e8774a}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+    .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(125deg,var(--c1),var(--c2));color:#fff;padding:34px 0 36px;border-bottom:4px solid transparent;border-image:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75%) 1}
+    .hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px;align-items:center}
+    .pill{display:inline-flex;padding:6px 12px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.9px;text-transform:uppercase}
+    h1{margin:12px 0 10px;font-size:clamp(28px,3.5vw,44px);line-height:1.08}
+    .lede{margin:0 0 16px;max-width:680px;color:#dce8f9;line-height:1.55}
+    .cta{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;border-radius:999px;height:42px;padding:0 16px}
+    .btn.primary{background:var(--hot);color:#fff}
+    .btn.ghost{border:1px solid rgba(255,255,255,.46);color:#fff}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .fact{padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08)}
+    .fact b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#b7d9ff;margin-bottom:4px}
+    .fact span{font-weight:700;font-size:15px}
+    .block{padding:28px 0}
+    .head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:14px}
+    .head h2{margin:0;font-size:clamp(22px,2.5vw,30px)}
+    .head p{margin:0;color:var(--muted)}
+    .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .card img{width:100%;height:170px;object-fit:cover;display:block}
+    .card .pad{padding:12px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .card p{margin:0 0 12px;color:var(--muted);font-size:14px;line-height:1.45}
+    .card .row{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{display:inline-block;font-size:12px;padding:3px 8px;border-radius:999px;background:#eaf2ff;color:#0a4e9a}
+    .quick{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+    .quick ul{margin:0;padding-left:20px;color:var(--muted)}
+    .quick li{margin:7px 0}
+    .latest{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+    .latest .status{margin:0 0 12px;color:var(--muted);font-size:13px}
+    .latest-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .news{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fbfdff}
+    .news h4{margin:0 0 5px;font-size:15px;line-height:1.35}
+    .news h4 a{text-decoration:none;color:#0f1f3e}
+    .news h4 a:hover{text-decoration:underline}
+    .news p{margin:0;color:#55647e;font-size:12.5px}
+    .news-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+    .subscribe{background:linear-gradient(130deg,#0f2861,#224799);color:#fff;border-radius:20px;padding:22px}
+    .subscribe h2{margin:0 0 8px}
+    .subscribe p{margin:0 0 12px;color:#d8e5fb}
+    .sub-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:start}
+    .sub-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+    .sub-list li{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:10px}
+    .sub-list b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--hot);font-size:12px}
+    footer{padding:18px 0 30px;color:#5e6d86;font-size:13px}
+    @media (max-width:1100px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width:860px){.hero-grid,.sub-grid,.latest-grid{grid-template-columns:1fr}}
+    @media (max-width:600px){.grid4,.facts{grid-template-columns:1fr}.wrap{padding:0 16px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill">Satish Paul Brief</span>
+        <h1>Microsoft announcements that matter to <span style="color:#81c8ff">Tax, Audit, Advisory, and IT Consulting</span></h1>
+        <p class="lede">The same visual landing style you asked for, now focused on Big-4 service-line outcomes: controls, compliance, transformation, and client delivery actions.</p>
+        <div class="cta">
+          <a class="btn primary" href="../brief/">Open full briefing</a>
+          <a class="btn ghost" href="#subscribe">Subscribe</a>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>Coverage</b><span>Tax · Audit · Advisory · IT Consulting</span></div>
+        <div class="fact"><b>Refresh</b><span>Daily Microsoft feed scan</span></div>
+        <div class="fact"><b>Navigation</b><span>Date, search, and service-line detail pages</span></div>
+        <div class="fact"><b>Actionability</b><span>Why it matters + recommended actions</span></div>
+      </div>
+    </div>
+  </header>
 
-.btn.gtb{background:#e8774a!important;color:#fff!important;border-color:#e8774a!important;box-shadow:0 6px 16px rgba(232,119,74,.35)}.btn.gtb:hover{background:#d4663b!important}
-.btn.rg{background:linear-gradient(90deg,#0067b8,#2f8fdc)!important;color:#fff!important;border-color:transparent!important}.btn.rg:hover{filter:brightness(1.08)}
+  <main class="wrap">
+    <section class="block">
+      <div class="head">
+        <div>
+          <h2>Pick your service-line view</h2>
+          <p>Each edition rewrites Microsoft announcements into detailed relevance for that practice.</p>
+        </div>
+      </div>
+      <div class="grid4">
+        <article class="card">
+          <img src="../assets/img/ed-finserv.jpg?v=b18e7c91" alt="">
+          <div class="pad">
+            <h3>Tax</h3>
+            <p>Tax compliance, provision, and tax-technology transformation insights from new Microsoft releases.</p>
+            <div class="row">
+              <a class="btn primary" href="../tax/">Open Tax</a>
+              <a class="btn ghost" href="../brief/?industry=Tax#subscribe">Subscribe</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/ed-profserv.jpg?v=2bcd5fc1" alt="">
+          <div class="pad">
+            <h3>Audit</h3>
+            <p>Control testing, evidence quality, and assurance-readiness implications mapped to Microsoft changes.</p>
+            <div class="row">
+              <a class="btn primary" href="../audit/">Open Audit</a>
+              <a class="btn ghost" href="../brief/?industry=Audit#subscribe">Subscribe</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/ed-retail.jpg?v=af29d324" alt="">
+          <div class="pad">
+            <h3>Advisory</h3>
+            <p>Risk, performance, and transformation perspectives tied to AI, security, data, and platform updates.</p>
+            <div class="row">
+              <a class="btn primary" href="../advisory/">Open Advisory</a>
+              <a class="btn ghost" href="../brief/?industry=Advisory#subscribe">Subscribe</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="../assets/img/ed-hightech.jpg?v=60916a57" alt="">
+          <div class="pad">
+            <h3>IT Consulting</h3>
+            <p>Cloud, data/AI, and managed-service delivery guidance from current Microsoft announcements.</p>
+            <div class="row">
+              <a class="btn primary" href="../it-consulting/">Open IT</a>
+              <a class="btn ghost" href="../brief/?industry=IT%20Consulting#subscribe">Subscribe</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-:root{--ink:#14171f;--muted:#5b6170;--line:#e6e2da;--bg:#faf8f4}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-img{max-inline-size:100%;block-size:auto}a{color:inherit}
-.wrap{max-inline-size:var(--page-max);margin-inline:auto;padding-inline:var(--page-pad)}@media (max-width:760px){.wrap{padding-inline:16px}}
-.evh{position:relative;overflow:hidden;color:#fff;background:linear-gradient(120deg,var(--c1),var(--c2));min-block-size:clamp(300px,calc(100vh - 520px),400px);display:flex;align-items:center}
-.evh .ph{position:absolute;inset-block:0;inset-inline-end:0;inline-size:66%;block-size:100%;object-fit:cover;object-position:var(--pos)}
-.evh::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--c1) 0,var(--c1) 34%,color-mix(in srgb,var(--c1) 70%,transparent) 46%,transparent 66%),linear-gradient(0deg,color-mix(in srgb,var(--c1) 55%,transparent),transparent 30%);pointer-events:none}
-.evh .in{position:relative;z-index:1;inline-size:100%;padding-block:28px}
-.card{max-inline-size:600px}
-.kk{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
-.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22)}
-.pill.cd{background:var(--hot);border-color:transparent}
-.evlogo{display:block;block-size:clamp(30px,3.4vw,42px);inline-size:auto;margin:4px 0 12px}
-.evh h1{margin:0 0 10px;font-size:clamp(26px,3.1vw,40px);line-height:1.1;letter-spacing:-.4px;font-weight:700;text-wrap:balance}
-.evh h1 span{color:var(--acc)}
-.evh .lede{margin:0 0 16px;font-size:16px;line-height:1.5;color:#dbe4f0;max-inline-size:540px}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 18px}
-.fact{padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
-.fact b{display:block;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc);margin-bottom:3px}
-.fact span{display:block;font-size:15px;font-weight:600;line-height:1.3}.fact small{display:block;font-size:12.5px;color:#c9d3e2;margin-top:2px}
-.ctas{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-flex;align-items:center;gap:8px;block-size:44px;padding:0 18px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap}.btn .arr{display:inline-block;transition:transform .15s ease}.btn:hover .arr{transform:translateX(4px)}.btn:focus-visible .arr{transform:translateX(4px)}@media (prefers-reduced-motion:reduce){.btn .arr{transition:none}.btn:hover .arr{transform:none}.btn:focus-visible .arr{transform:none}}
-.btn.p{background:var(--hot);color:#fff}.btn.p:hover{filter:brightness(1.08)}
-.btn.s{background:#fff;color:var(--c1)}.btn.g{border:1px solid rgba(255,255,255,.45);color:#fff}
-.btn.g:hover{background:rgba(255,255,255,.1)}
-section.blk{padding-block:44px 8px}
-.sh{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
-.sh h2{margin:0;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.3px}.sh p{margin:6px 0 0;color:var(--muted);max-inline-size:640px;font-size:15.5px;line-height:1.5}
-.kick{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--c2)}
-.days{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.day{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 16px 14px;border-block-start:4px solid var(--c2);box-shadow:0 1px 2px rgba(0,0,0,.04)}
-.day .dt{display:flex;align-items:baseline;gap:8px}.day .dt b{font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--c2)}.day .dt span{font-size:22px;font-weight:700}
-.day h3{margin:6px 0 8px;font-size:16px}.day ul{margin:0;padding-inline-start:18px;color:var(--muted);font-size:14px;line-height:1.5}
-.spk{display:flex;flex-wrap:wrap;gap:10px}
-.sp{display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:#fff;border:1px solid var(--line)}
-.sp i{inline-size:36px;block-size:36px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:13px;color:#fff;background:linear-gradient(135deg,var(--c2),var(--acc))}
-.sp b{display:block;font-size:14.5px}.sp small{display:block;font-size:12.5px;color:var(--muted)}
-.kb{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.k{display:flex;gap:12px;padding:16px;border-radius:16px;background:#fff;border:1px solid var(--line)}
-.k .e{flex:none;inline-size:42px;block-size:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:color-mix(in srgb,var(--acc) 22%,#fff)}
-.k h3{margin:0 0 4px;font-size:15.5px}.k p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
-.fd{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.ft.wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);align-items:stretch;min-block-size:0;background:linear-gradient(135deg,var(--c1),var(--c2))}.ft.wide::before{display:none}.ft.wide img{position:relative;inset:auto;grid-column:2;grid-row:1;inline-size:100%;block-size:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 50%;z-index:0}.ft.wide .tx{grid-column:1;grid-row:1;align-self:center;padding:28px 32px}.ft.wide p{max-inline-size:none}@media (max-width:820px){.ft.wide{grid-template-columns:1fr}.ft.wide img{grid-column:1;grid-row:1}.ft.wide .tx{grid-column:1;grid-row:2;padding:20px 22px}}.ft:not(.wide) img{object-position:60% 30%}
-.ft{position:relative;overflow:hidden;border-radius:20px;min-block-size:250px;display:flex;align-items:flex-end;color:#fff;text-decoration:none;isolation:isolate}
-.ft img{position:absolute;inset:0;inline-size:100%;block-size:100%;object-fit:cover;object-position:70% 30%;z-index:-2;transition:transform .5s}
-.ft::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,12,24,.88),rgba(8,12,24,.55) 60%,rgba(8,12,24,.25))}
-.ft:hover img{transform:scale(1.04)}
-.ft .tx{padding:22px 24px}.ft .tk{font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--acc)}
-.ft h3{margin:6px 0 6px;font-size:24px;line-height:1.15}.ft p{margin:0 0 14px;font-size:15px;line-height:1.45;color:#e3e8f0;max-inline-size:440px}
-.ft .wb{display:inline-flex;align-items:center;block-size:38px;padding:0 16px;border-radius:8px;background:#fff;color:#14171f;font-weight:600;font-size:14.5px}
-.sb{margin-block:48px 20px;border-radius:24px;padding:30px;color:#fff;background:radial-gradient(900px 300px at 90% -20%,color-mix(in srgb,var(--acc) 40%,transparent),transparent 60%),linear-gradient(135deg,var(--c1),var(--c2));display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center}
-.sb h2{margin:6px 0 10px;font-size:clamp(22px,2.4vw,30px)}.sb .kick{color:var(--acc)}.sb p{margin:0 0 16px;color:#dbe4f0;line-height:1.5}
-.s123{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.s123 li{display:flex;gap:12px;align-items:center;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:14.5px}
-.s123 b{flex:none;inline-size:30px;block-size:30px;border-radius:50%;display:grid;place-items:center;background:var(--hot);font-size:14px}
-.share{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
-.note{margin:18px 0 40px;font-size:13px;color:var(--muted);line-height:1.5}
-.evcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.evcards .ft{min-block-size:340px}
-.ft .st{position:absolute;inset-block-start:16px;inset-inline-start:16px;padding:5px 11px;border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;background:var(--hot);color:#fff}
-.ft .st.r{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35)}
-@media (max-width:1100px){.days{grid-template-columns:1fr 1fr}.kb{grid-template-columns:1fr 1fr}.evcards{grid-template-columns:1fr 1fr}}
-@media (max-width:860px){.evh{display:block;min-block-size:0}.evh .ph{position:relative;inline-size:100%;block-size:220px;display:block}.evh::after{background:linear-gradient(0deg,var(--c1) 0,var(--c1) calc(100% - 220px),transparent calc(100% - 120px))}.evh .in{padding-block:0 26px;margin-top:-30px}
-.fd,.sb,.evcards{grid-template-columns:1fr}.kb{grid-template-columns:1fr}}
-@media (max-width:560px){.facts{grid-template-columns:1fr}.days{grid-template-columns:1fr}.btn{block-size:42px;padding:0 15px;font-size:14px}}
-</style><style id="msbar">.evh,.hero.msb{border-block-end:4px solid transparent!important;border-image:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75%) 1!important}</style><link rel="stylesheet" href="../assets/css/frontier-style.css"></head><body style="--c1:#0b1f4d;--c2:#1d3f8f;--acc:#4fa8e8;--hot:#e8774a;--pos:70% 50%"><header class="gh"><div class="ghr"><a class="lock" href="https://nfratello.github.io/" aria-label="Becoming Frontier home"><img class="mslogo" src="https://nfratello.github.io/icons/microsoft-logo-full.svg" alt="Microsoft" height="20"><span class="ldiv" aria-hidden="true"></span><span class="site">Becoming Frontier</span></a><nav class="gnav" aria-label="Frontier sites"><a href="../" class="on">The Brief</a><a href="https://nfratello.github.io/intelligent-business-process/">The Hub</a><a href="../coach/">The Coach</a><a class="cta" href="#subscribe">Subscribe</a><span class="fw-bar"><span class="fwdiv" aria-hidden="true"></span><span class="fwt">Built with Copilot <img src="../assets/icons/copilot.png" alt="" width="14" height="14"></span><span aria-hidden="true">|</span><button type="button" class="aka" data-url="https://aka.ms/MicrosoftBrief" aria-label="Copy link https://aka.ms/MicrosoftBrief" title="https://aka.ms/MicrosoftBrief"><svg class="akl-i" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span class="akl" aria-live="polite">aka.ms/MicrosoftBrief</span></button></span></nav><details class="gmenu"><summary aria-label="Menu">Menu</summary><nav aria-label="Frontier sites"><span class="fw-bar"><span class="fwdiv" aria-hidden="true"></span><span class="fwt">Built with Copilot <img src="../assets/icons/copilot.png" alt="" width="14" height="14"></span><span aria-hidden="true">|</span><button type="button" class="aka" data-url="https://aka.ms/MicrosoftBrief" aria-label="Copy link https://aka.ms/MicrosoftBrief" title="https://aka.ms/MicrosoftBrief"><svg class="akl-i" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span class="akl" aria-live="polite">aka.ms/MicrosoftBrief</span></button></span><a href="../" class="on">The Brief</a><a href="https://nfratello.github.io/intelligent-business-process/">The Hub</a><a href="../coach/">The Coach</a><a class="cta" href="#subscribe">Subscribe</a></nav></details></div><nav class="lb" aria-label="The Brief sections"><div class="lbw"><a class="lbt" href="../">The Brief</a><a href="../brief/latest/">This week</a><a href="../#editions">Industry Editions</a><a href="../events/">Events</a><a href="../issues/">Archive</a></div></nav><span class="mstrip" aria-hidden="true"></span></header>
-<main>
-<section class="evh" style="min-block-size:clamp(250px,30vh,320px)"><img class="ph" src="../assets/img/events/convergence-hero.jpg?v=951328b1" alt="" width="1680" height="944" fetchpriority="high">
-<div class="in wrap"><div class="card"><div class="kk"><span class="pill">Event briefs</span></div><h1>Going to a Microsoft event? <span>Start&nbsp;here.</span></h1>
-<p class="lede">The what, when, where and who for each event on one page, plus the follow-ups your Microsoft team shares after the official&nbsp;agenda.</p>
-<div class="ctas"><a class="btn p" href="convergence/">Convergence · Dec 8–11 <span class="arr" aria-hidden="true">›</span></a><a class="btn g" href="ignite/">Ignite 2026 recap <span class="arr" aria-hidden="true">›</span></a><a class="btn g" href="#subscribe">Get The Brief</a></div></div></div></section>
-<section class="blk wrap"><div class="sh"><div><div class="kick">Upcoming and recent</div><h2>Pick your&nbsp;event</h2><p>Each page fits the essentials on one screen. Scroll for the week at a glance, speakers, travel tips and field follow-ups.</p></div></div><div class="evcards"><a class="ft" href="convergence/"><img src="../assets/img/events/convergence-card.jpg?v=3a17a1cf" alt="" width="900" height="506" loading="lazy" style="object-position:70% 50%"><span class="st" data-start="2026-12-08" data-status="upcoming">Upcoming</span><div class="tx"><div class="tk" style="color:#4fa8e8">Dec 8–11, 2026 · Fontainebleau Miami Beach</div><h3>Convergence 2026</h3><p>100+ Microsoft-led sessions, keynotes, expo and add-on workshops.</p><span class="wb">See the event brief →</span></div></a><a class="ft" href="ignite/"><img src="../assets/img/events/ignite-card.jpg?v=87ded2f3" alt="" width="900" height="506" loading="lazy" style="object-position:72% 40%"><span class="st r" data-start="2026-11-17" data-status="recap">Recap</span><div class="tx"><div class="tk" style="color:#a78bfa">Nov 17–20, 2026 · San Francisco</div><h3>Microsoft Ignite 2026</h3><p>Keynotes, sessions, hands-on labs and free onsite certification.</p><span class="wb">Read the recap →</span></div></a><a class="ft" href="ppcc/"><img src="../assets/img/events/ppcc-card.jpg?v=bc1be28d" alt="" width="900" height="506" loading="lazy" style="object-position:72% 45%"><span class="st r" data-start="2026-10-27" data-status="recap">Recap</span><div class="tx"><div class="tk" style="color:#5eead4">Oct 27–29, 2026 · Las Vegas</div><h3>Power Platform Community Conference 2026</h3><p>200+ sessions, 24 workshops, keynotes and onsite AI certifications. Next: Maker Con, Chicago, Nov 2–4, 2027.</p><span class="wb">Read the recap →</span></div></a></div></section>
-<div class="wrap"><section class="sb" id="subscribe"><div><div class="kick">Free · weekly · 5 minutes</div><h2>Don’t just attend. Keep&nbsp;up.</h2><p>The Microsoft Brief turns event announcements into what they mean for your industry, every Tuesday.</p><div class="ctas"><a class="btn p" href="mailto:Nick.Fratello@microsoft.com?subject=Subscribe%3A%20Microsoft%20Brief%20%C2%B7%20Events&body=Please%20add%20me%20to%20the%20Microsoft%20Brief%20%28Events%29.%0AI%27m%20opting%20in%20with%20my%20work%20email.%20I%20can%20reply%20STOP%20anytime.">Subscribe with your work email</a><a class="btn g" href="../">See a sample issue <span class="arr" aria-hidden="true">›</span></a></div></div>
-<ol class="s123"><li><b>1</b>Send the pre-filled email from your work address</li><li><b>2</b>Tell us up to 3 industries you care about</li><li><b>3</b>Read your Brief every Tuesday, 5 minutes</li></ol></section>
-<p class="note">All information on these pages is publicly available from each event’s official site and may change (<a class="srcl" href="../sources/">see our sources</a>). The Microsoft Brief is made with Microsoft Copilot Cowork and Power Platform.</p></div>
-</main><script>(function(){document.querySelectorAll('[data-start]').forEach(function(el){var s=new Date(el.getAttribute('data-start')+'T09:00:00'),n=new Date(),d=Math.ceil((s-n)/864e5);if(el.getAttribute('data-status')==='recap'){el.textContent='Recap';return}if(d>1)el.textContent='In '+d+' days';else if(d>=-3)el.textContent='Happening now';else el.textContent='Recap';});})();
-document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var u=b.getAttribute('data-copy');(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.textContent='Link copied ✓'},function(){window.prompt('Copy this link',u)})})});</script><footer class="fw-foot"><span class="fw-foot-line">Part of <a href="https://nfratello.github.io/">Frontier with Microsoft</a>: <a href="../">the Brief</a>, <a href="https://nfratello.github.io/intelligent-business-process/">The Hub</a> and <a href="../coach/">The Coach</a>.</span><span class="fw-bar"><span class="fwdiv" aria-hidden="true"></span><span class="fwt">Built with Copilot <img src="../assets/icons/copilot.png" alt="" width="14" height="14"></span><span aria-hidden="true">|</span><button type="button" class="aka" data-url="https://aka.ms/MicrosoftBrief" aria-label="Copy link https://aka.ms/MicrosoftBrief" title="https://aka.ms/MicrosoftBrief"><svg class="akl-i" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span class="akl" aria-live="polite">aka.ms/MicrosoftBrief</span></button></span></footer><script src="../assets/js/share-line.js" defer></script></body></html>
+    <section class="block">
+      <div class="quick">
+        <div class="head">
+          <div>
+            <h2>How to use this landing page</h2>
+            <p>Designed to feel like the events-style front page, but tuned to your service-line briefing workflow.</p>
+          </div>
+        </div>
+        <ul>
+          <li><span class="chip">1</span> Open a service line to see detailed write-ups, application angles, and recommended actions.</li>
+          <li><span class="chip">2</span> Use date and search controls inside each edition to review past published updates.</li>
+          <li><span class="chip">3</span> Subscribe by service line and manage preferences/unsubscribe through Power Platform-enabled forms.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block latest" aria-label="Latest Microsoft news">
+      <div class="head">
+        <div>
+          <h2>Latest Microsoft news</h2>
+          <p>Recent announcements surfaced from your daily ingestion pipeline.</p>
+        </div>
+      </div>
+      <p id="events-news-status" class="status">Loading latest headlines…</p>
+      <div id="events-news-list" class="latest-grid"></div>
+    </section>
+
+    <section class="block subscribe" id="subscribe">
+      <div class="sub-grid">
+        <div>
+          <h2>Subscribe to your brief</h2>
+          <p>Get focused weekly updates for your chosen service lines. Quick subscribe links preselect your edition automatically.</p>
+          <div class="cta">
+            <a class="btn primary" href="../brief/#subscribe">Open subscription form</a>
+            <a class="btn ghost" href="../manage-preferences/">Manage preferences</a>
+            <a class="btn ghost" href="../unsubscribe/">Unsubscribe</a>
+          </div>
+        </div>
+        <ol class="sub-list">
+          <li><b>1</b> Choose one or more service lines.</li>
+          <li><b>2</b> Enter your work email and save.</li>
+          <li><b>3</b> Receive ongoing updates from the daily pipeline.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    Built for SatishPaul.github.io · Powered by daily Microsoft scanning + service-line relevance mapping.
+  </footer>
+
+  <script src="../assets/js/site-config.js"></script>
+  <script src="../assets/js/powerplatform-subscriptions.js"></script>
+  <script src="../assets/js/events-landing-news.js"></script>
+</body>
+</html>
