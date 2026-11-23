@@ -44,6 +44,10 @@
     .quick li{margin:7px 0}
     .latest{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
     .latest .status{margin:0 0 12px;color:var(--muted);font-size:13px}
+    .latest .tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 10px}
+    .latest label{font-size:13px;font-weight:600;color:#33425c}
+    .latest input[type="date"]{padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#1c2b44}
+    .latest .count{margin:0 0 12px;color:#4e5d77;font-size:13px}
     .latest-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
     .news{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fbfdff}
     .news h4{margin:0 0 5px;font-size:15px;line-height:1.35}
@@ -161,10 +165,15 @@
       <div class="head">
         <div>
           <h2>Latest Microsoft news</h2>
-          <p>Recent announcements surfaced from your daily ingestion pipeline.</p>
+          <p>Select a date to see the exact announcements captured on that day.</p>
         </div>
       </div>
+      <div class="tools">
+        <label for="events-news-date">News date</label>
+        <input id="events-news-date" type="date">
+      </div>
       <p id="events-news-status" class="status">Loading latest headlines…</p>
+      <p id="events-news-count" class="count"></p>
       <div id="events-news-list" class="latest-grid"></div>
     </section>
 
@@ -172,7 +181,7 @@
       <div class="sub-grid">
         <div>
           <h2>Subscribe to your brief</h2>
-          <p>Get focused weekly updates for your chosen service lines. Quick subscribe links preselect your edition automatically.</p>
+          <p>Get focused weekly updates for your chosen service lines. Subscribing takes seconds, and unsubscribing is just as easy at any time.</p>
           <div class="cta">
             <a class="btn primary" href="../brief/#subscribe">Open subscription form</a>
             <a class="btn ghost" href="../manage-preferences/">Manage preferences</a>
@@ -181,8 +190,8 @@
         </div>
         <ol class="sub-list">
           <li><b>1</b> Choose one or more service lines.</li>
-          <li><b>2</b> Enter your work email and save.</li>
-          <li><b>3</b> Receive ongoing updates from the daily pipeline.</li>
+          <li><b>2</b> Enter your work email and click subscribe.</li>
+          <li><b>3</b> Update preferences or unsubscribe anytime from the links above.</li>
         </ol>
       </div>
     </section>

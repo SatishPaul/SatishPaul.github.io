@@ -2,7 +2,14 @@ name: Daily Tax Audit IT Update
 
 on:
   schedule:
-    - cron: "30 11 * * *" # 06:30 America/New_York (approx, non-DST-aware)
+    # GitHub cron is UTC. Run both DST windows for 06:30 America/New_York.
+    - cron: "30 11 * * *" # 06:30 ET during EST
+    - cron: "30 10 * * *" # 06:30 ET during EDT
+  push:
+    branches: [main]
+    paths:
+      - "scripts/daily-tax-audit-it-update.js"
+      - ".github/workflows/daily-tax-audit-it-update.yml"
   workflow_dispatch:
 
 permissions:
@@ -28,5 +35,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/daily-articles.json
-          git diff --staged --quiet || git commit -m "chore: daily industry article refresh"
-          git push
+          if git diff --staged --quiet; then
+            echo "No daily feed changes to commit."
+          else
+            git commit -m "chore: daily industry article refresh"
+            git push
+          fi
