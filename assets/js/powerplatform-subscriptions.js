@@ -1,6 +1,7 @@
 (function () {
   var cfg = window.SATISH_BRIEF_CONFIG || {};
   var fallbackTo = cfg.fallbackSubscriptionEmail || "";
+  var enableEmailFallback = cfg.enableEmailFallback === true;
 
   function endpointFor(formType) {
     if (formType === "subscribe") return cfg.subscribeFlowUrl || "";
@@ -111,10 +112,10 @@
         try {
           if (!endpoint) {
             localStorage.setItem("satishBrief:lastPayload", JSON.stringify(payload));
-            if (openFallbackMailto(payload)) {
+            if (enableEmailFallback && openFallbackMailto(payload)) {
               setMessage(form, "No flow URL configured yet. Opened email fallback.", false);
             } else {
-              setMessage(form, "No flow URL configured yet. Saved your request locally in this browser.", false);
+              setMessage(form, "Online subscription is not configured yet. Please add the Power Automate flow URL in site-config.js.", true);
             }
             return;
           }
@@ -123,10 +124,10 @@
           form.reset();
         } catch (err) {
           console.error(err);
-          if (openFallbackMailto(payload)) {
+          if (enableEmailFallback && openFallbackMailto(payload)) {
             setMessage(form, "Could not reach the flow endpoint; opened email fallback.", false);
           } else {
-            setMessage(form, "Could not complete request. Please try again.", true);
+            setMessage(form, "Could not complete online request. Please check the flow URL and try again.", true);
           }
         }
       });

@@ -20,6 +20,8 @@ Set your Power Automate HTTP trigger URLs in `assets/js/site-config.js`:
 - `preferencesFlowUrl`
 - `unsubscribeFlowUrl`
 
+Use `enableEmailFallback: false` (default) to keep subscription online-only and prevent mail app popups.
+
 Expected JSON payload from website forms:
 
 ```json
