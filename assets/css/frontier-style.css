@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Frontier with Microsoft — shared site style v1.0
+   Linked from every page in this repo ("The Brief"). Scope of this file:
+     1) the shared top bar (.gh, v0.5 unified Frontier header) and section row (.lb)
+     2) sitewide type system (fonts + a 3-size type scale)
+     3) the 4px spacing grid as custom properties + a few utility classes
+     4) canvas utilities (.fw-alt off-white section background)
+     5) a shared footer line (.fw-foot)
+   This file intentionally does NOT touch hero sections (.hero) — those keep
+   their existing, page-authored typographic treatment. Selectors below that
+   could affect the hero explicitly exclude it with :not(.hero h1) etc.
+   ========================================================================== */
+
+:root{
+  --ink:#0b1b33;
+  --fw-navy:#081628;
+  --fw-off:#f6f7f9;
+  --fw-border:#e2e8f0;
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --page-max:1240px;--page-pad:28px;
+}
+
+/* ---- 0. No orphan words (Design standards v1.4) ----- */
+h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
+p,li,figcaption,blockquote,q{text-wrap:pretty}
+
+/* ---- 0b. Share line (Design standards v2.1) ----- */
+.fw-bar{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#6b7280;white-space:nowrap;line-height:1}
+.fw-bar .fwdiv{display:inline-block;width:1px;align-self:stretch;min-height:16px;background:#d1d5db}
+.fw-bar .fwt{display:inline-flex;align-items:center;gap:5px}
+.fw-bar .fwt img{width:14px;height:14px;display:block}
+.fw-bar button.aka{display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;margin:0;font:inherit;font-size:13px;color:#6b7280;cursor:pointer}
+.fw-bar button.aka svg.akl-i{inline-size:14px;block-size:14px;flex:none}
+.fw-bar button.aka:hover,.fw-bar button.aka:focus-visible{color:#0f6cbd;text-decoration:underline;outline:none}
+.fw-bar button.aka.done{color:#107c41;text-decoration:none}
+footer .fw-bar button.aka:hover,footer .fw-bar button.aka:focus-visible{color:#50e6ff}
+footer .fw-bar button.aka.done{color:#6ee7a8}
+.gh .gnav .fw-bar{margin-inline-start:32px}
+@media (min-width:1960px){.gh .gnav .fw-bar{position:fixed;top:30px;right:48px;transform:translateY(-50%);margin:0;z-index:201}}
+.gh .gmenu nav .fw-bar{display:flex;width:100%;padding-block:10px 12px;margin-block-end:4px;border-block-end:1px solid #e5e7eb}
+footer .fw-bar{display:flex;margin-block-start:14px}
+@media (max-width:760px){.gh .gnav .fw-bar{display:none}}
+@media print{.fw-bar{display:none}}
+
+/* ---- 1. Shared top bar (v0.5 unified header, Design standards v1.2) ----- */
+html{scroll-padding-top:112px}
+[id]{scroll-margin-top:112px}
+.gh{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid #e0e0e0}
+.ghr{display:flex;align-items:center;height:60px;padding-inline:var(--page-pad);max-width:var(--page-max);margin:0 auto}
+.gh .site,.gh .mswm{white-space:nowrap}
+.gh .gnav a{white-space:nowrap}
+@media (max-width:1100px){
+  .gh .lock{gap:8px}
+  .gh .gnav{gap:0}
+  .gh .gnav a{padding-inline:8px}
+  .gh .gnav .fw-bar{display:none}
+  .gh a.cta{margin-inline-start:8px;padding-inline:10px}
+}
+.gh .lock{display:flex;align-items:center;gap:14px;text-decoration:none;color:#242424;min-width:0}
+.gh .mslogo{display:inline-flex;align-items:center;gap:8px}.gh img.mslogo{display:block;height:20px;width:auto}
+.gh .msq{display:grid;grid-template-columns:10px 10px;gap:2px}.gh .msq i{display:block;width:10px;height:10px}
+.gh .mswm{font-family:"Segoe UI",system-ui,Arial,sans-serif;font-size:20px;font-weight:600;color:#737373;letter-spacing:-.01em}
+.gh .ldiv{width:1px;height:26px;background:#bdbdbd}
+.gh .site{font-size:18px;font-weight:600;color:#242424}
+.gh .ghr{position:relative}
+.gh .gnav{margin-inline-start:auto;display:flex;align-items:center;gap:4px}
+.gh .gnav a,.gh .gmenu nav a{font-size:15px;color:#616161;font-weight:600;text-decoration:none;padding-block:19px 16px;padding-inline:12px;border-bottom:0;transition:color .2s}
+.gh .gnav a:not(.cta):hover{color:#242424}
+.gh .gnav a.on{color:#111827}
+.gh .gnav a{position:relative}
+.gh .gnav a::after{content:"";position:absolute;inset-inline:0;bottom:8px;height:3px;border-radius:999px;background:#9ca3af;opacity:0;transition:opacity .15s ease}
+.gh .gnav a:not(.on):hover::after,.gh .gnav a:not(.on):focus-visible::after{opacity:1}
+@media (prefers-reduced-motion:reduce){.gh .gnav a::after{transition:none}}
+.gh .hbar{position:absolute;left:0;bottom:8px;height:3px;border-radius:999px;background:#0f6cbd;opacity:0;transition:transform .2s ease,width .2s ease,opacity .2s ease;pointer-events:none}
+.gh a.cta{margin-inline-start:14px;background:#0f6cbd;color:#fff;border-radius:6px;padding-block:8px;padding-inline:14px;border:0;font-weight:600;font-size:14px}.gh a.cta:hover,.gh a.cta:focus-visible{background:#115ea3;color:#fff}.gh a.cta:active{background:#0f548c;color:#fff}
+.gh .gmenu{display:none;margin-inline-start:auto;position:relative}
+.gh .gmenu summary{list-style:none;cursor:pointer;font-size:15px;font-weight:600;padding-block:8px;padding-inline:12px;border:1px solid #d1d1d1;border-radius:6px}
+.gh .gmenu summary::-webkit-details-marker{display:none}
+.gh .gmenu nav{position:absolute;inset-inline-end:0;top:44px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:flex;flex-direction:column;min-width:200px;padding-block:6px;z-index:5}
+.gh .gmenu nav a{padding-block:10px;border-bottom:0;border-inline-start:3px solid transparent}.gh .gmenu nav a.on{color:#111827;border-inline-start-color:#0f6cbd}
+.gh .gmenu nav a.cta{margin:8px 12px;text-align:center;color:#fff}
+.gh .lb{display:block;height:44px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;font-weight:400;letter-spacing:normal;text-transform:none;max-width:none;position:relative;z-index:1}
+.gh .lb .lbw{display:flex;align-items:center;gap:22px;height:44px;max-width:var(--page-max);margin-inline:auto;padding-inline:var(--page-pad);overflow-x:auto;white-space:nowrap;position:relative}
+.gh .lb a{color:#616161;text-decoration:none;font-weight:600;letter-spacing:normal;text-transform:none;transition:color .2s}.gh .lb a:hover{color:#242424;text-decoration:underline}
+.gh .lb a.on{color:#111827}
+.gh .lb .lbt{color:#242424;font-weight:700;font-size:15px;text-decoration:none}
+.gh .lb b{color:#242424}
+.gh .ghr:last-child{position:relative}
+.mstrip{display:block;block-size:4px;background:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75% 100%)}
+@media (prefers-reduced-motion:reduce){.gh .hbar{transition:none}}
+@media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb .lbw{padding-inline:16px;gap:16px}}
+@media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb,.mstrip{display:none}}
+
+/* ---- 2. Sitewide type system -------------------------------------------- */
+body{
+  font-family:"Segoe Sans Text","Segoe UI Variable Text","Segoe UI",Arial,sans-serif!important;
+  font-size:17px;
+  color:var(--ink);
+}
+h1:not(.hero h1):not(table.wrap h1):not(.llh1),h2:not(.hero h2):not(table.wrap h2):not(.llh2),h3:not(.hero h3):not(table.wrap h3){
+  font-family:"Segoe UI Variable Display","Segoe UI Variable Text","Segoe UI",Arial,sans-serif!important;
+  font-weight:600!important;
+}
+h1:not(.hero h1):not(table.wrap h1):not(.llh1){font-size:clamp(34px,4.4vw,56px)!important;}
+h2:not(.hero h2):not(table.wrap h2):not(.llh2){font-size:clamp(26px,3vw,34px)!important;}
+h3:not(.hero h3):not(table.wrap h3){font-size:clamp(20px,2.4vw,26px)!important;}
+
+/* ---- 0c. Issue / email pages (P44): exempt from the type-system clamp above.
+   Every issues/*.html, preview/*.html and coach/week-*.html page lays its
+   content out inside a fixed <table class="wrap" width="600"> (the same
+   markup the emailed version renders), with its own inline px font sizes,
+   family and weight tuned for that fixed width — left untouched above via
+   the :not(table.wrap h1/h2/h3) exemptions. On a fixed-width email table,
+   letting the font grow with viewport width desyncs it from its own
+   (necessarily px) line-height and causes overlapping headline lines on
+   wide screens. Scoped to screens wider than the page's own email-mobile
+   breakpoint (620px, see the max-width:620px media query above) so the
+   page's own `.h1{font-size:26px!important}` mobile override keeps working
+   unchanged; above that, headline size never grows past its own authored
+   1024px-and-up value and every heading gets a unitless line-height instead
+   of its inline px one. This only affects the externally-linked,
+   web-rendering stylesheet — it has no effect on the emailed version of an
+   issue, which email clients render from inline/attribute styles only and
+   never load this file. */
+@media (min-width:621px){
+  table.wrap h1{font-size:32px!important;line-height:1.15!important;}
+}
+table.wrap h2{line-height:1.3!important;}
+table.wrap h3{line-height:1.3!important;}
+
+/* ---- 0d. /brief/latest/ list+preview pane (P45): the page's own fixed-size
+   headline (H1 "Choose your edition") and the preview pane's own headline
+   (H2, the previewed issue's title) are likewise exempted above via
+   :not(.llh1)/:not(.llh2) and given their own fixed size + unitless
+   line-height in brief/latest/index.html's own injected <style id="llp-css">
+   block — same reasoning as 0c: a fluid clamp doesn't suit this page's
+   fixed ~480px list column or ~560px preview card. */
+
+/* ---- 3. 4px spacing grid + card/section utilities ----------------------- */
+.fw-card{border-radius:16px!important;padding:var(--sp-5)!important;border:1px solid var(--fw-border)!important}
+.fw-sec-pad{padding-block:56px!important} /* brief-specified section rhythm; not itself one of the --sp-N 4px-grid steps */
+
+/* ---- 4. Canvas: alternating section backgrounds -------------------------- */
+.fw-alt{background:var(--fw-off)}
+
+/* ---- 5. Shared footer line ------------------------------------------------ */
+.fw-foot{display:block;max-width:1320px;margin:0 auto;padding:16px 24px 32px;font-size:13px;color:#5f6368}
+.fw-foot a{color:inherit;text-decoration:underline}
+footer .fw-foot-line{display:block;margin-top:10px;font-size:inherit}
+
+/* ---- 6. Coach "Cowork track" cards --------------------------------------- */
+.fw-cowork{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-5)}
+.fw-cowork .fw-card{background:var(--card,#fff)}
+.fw-cowork .fw-card b{display:block;font-size:17px;margin-bottom:6px}
+.fw-cowork .fw-card p{margin:0;color:var(--muted,#5f6368);font-size:15px}
+@media (max-width:760px){.fw-cowork{grid-template-columns:1fr}}

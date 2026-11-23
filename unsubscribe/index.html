@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Unsubscribe · Satish Paul Brief</title>
+  <link rel="stylesheet" href="../assets/css/frontier-style.css">
+  <style>
+    body{font-family:"Segoe UI",SegoeUI,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;margin:0;color:#0b1b33;background:#f2f6fb}
+    .wrap{max-width:760px;margin:0 auto;padding:20px}
+    .box{background:#fff;border:1px solid #d9e2ef;border-radius:16px;padding:20px}
+    h1{margin:0 0 8px}
+    p{color:#4f6077}
+    label{display:block;margin:10px 0}
+    input[type="email"],input[type="text"]{width:100%;max-width:520px;padding:10px;border:1px solid #c7d3e3;border-radius:8px}
+    .btn{display:inline-block;background:#b42318;color:#fff;border:0;border-radius:999px;padding:10px 14px;font-weight:600;cursor:pointer}
+    .msg{margin-top:10px;color:#0f766e;font-weight:600}
+    .err{color:#b42318}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p><a href="../">← Home</a></p>
+    <section class="box">
+      <h1>Unsubscribe</h1>
+      <p>Stop all future brief emails. This writes an unsubscribe status in Power Platform when configured.</p>
+      <form data-pp-form="unsubscribe">
+        <label>Work email
+          <input type="email" name="email" required placeholder="name@company.com">
+        </label>
+        <label>Unsubscribe token (optional from email link)
+          <input type="text" name="token" placeholder="optional token">
+        </label>
+        <button class="btn" type="submit">Unsubscribe</button>
+        <div class="msg" data-msg></div>
+      </form>
+    </section>
+  </div>
+  <script src="../assets/js/site-config.js"></script>
+  <script src="../assets/js/powerplatform-subscriptions.js"></script>
+</body>
+</html>

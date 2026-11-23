@@ -1,0 +1,558 @@
+{
+  "generatedAt": "2026-11-23T13:04:44.177Z",
+  "dates": [
+    {
+      "date": "2026-11-23",
+      "scannedAtUtc": "2026-11-23T13:04:44.176Z",
+      "articles": [
+        {
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-20",
+          "summary": "We're honored that Microsoft has once again been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "The risks of device code authentication for AI coding agents",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Lab research shows how device code phishing, a technique that applies to any device-flow client, can extend to AI coding agents, using GitHub Copilot CLI as an illustrative example. The post The risks of device code authentication for AI coding agents appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Tax",
+              "score": 2,
+              "serviceLines": [
+                "Tax Technology Transformation"
+              ],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (risk, copilot). Service lines: Tax Technology Transformation."
+            },
+            {
+              "name": "Audit",
+              "score": 2,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (risk, security)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai, copilot). Service lines: Data & AI Transformation."
+            },
+            {
+              "name": "Advisory",
+              "score": 1,
+              "serviceLines": [
+                "Risk Advisory"
+              ],
+              "whyItMatters": "Useful for advisory teams because it can improve risk, deals, and performance-transformation outcomes (risk). Service lines: Risk Advisory."
+            }
+          ]
+        },
+        {
+          "title": "Microsoft and Oracle bring agentic AI into flow of enterprise work",
+          "link": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Our new integrations let AI agents reason across Oracle’s business-critical data. The post Microsoft and Oracle bring agentic AI into flow of enterprise work appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 3,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai, integration). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            },
+            {
+              "name": "Tax",
+              "score": 2,
+              "serviceLines": [
+                "Tax Technology Transformation"
+              ],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (erp, oracle). Service lines: Tax Technology Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+          "link": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new capabilities across isolated execution, networking, context management, and inference efficiency, we’re fundamentally improving agent speed, security, and unit economics. The post Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 3,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai, infrastructure). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            },
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            },
+            {
+              "name": "Advisory",
+              "score": 1,
+              "serviceLines": [
+                "Performance Improvement"
+              ],
+              "whyItMatters": "Useful for advisory teams because it can improve risk, deals, and performance-transformation outcomes (modernization). Service lines: Performance Improvement."
+            }
+          ]
+        },
+        {
+          "title": "Microsoft Ignite 2026: What’s new in Azure, the platform purpose-built for AI",
+          "link": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "At Microsoft Ignite, we're sharing what's new across every layer of the platform. New capabilities spanning compute, storage, and networking let you run AI at scale with the control of your own infrastructure, without having to build, secure, and operate all of it yourself. The post Microsoft Ignite 2026: What’s new in Azure, the platform purpose-built for AI appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 4,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai, platform). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era",
+          "link": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Azure Cobalt 200 VMs bring improved performance and efficiency to cloud-native applications, databases, developer tools, and agentic AI workloads. The post Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            },
+            {
+              "name": "Advisory",
+              "score": 1,
+              "serviceLines": [
+                "Performance Improvement"
+              ],
+              "whyItMatters": "Useful for advisory teams because it can improve risk, deals, and performance-transformation outcomes (performance). Service lines: Performance Improvement."
+            }
+          ]
+        },
+        {
+          "title": "Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent",
+          "link": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Today, we are announcing Microsoft IQ, the enterprise context management platform that helps organizations create their own IQ. What sets an organization apart is everything around the model: its own intelligence. The post Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Cloud & Platform Engineering"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, platform). Service lines: Cloud & Platform Engineering."
+            },
+            {
+              "name": "Tax",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (erp)."
+            }
+          ]
+        },
+        {
+          "title": "Security for the agentic era, powered by Microsoft Perception",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Read about updates to Microsoft Perception and the new Microsoft Security cyber stack to defend against threats, secure agents, and protect your digital estate. The post Security for the agentic era, powered by Microsoft Perception appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Microsoft Threat Intelligence observed a high-volume phishing campaign using Microsoft 365 outage-themed lures to target organizations across multiple sectors worldwide. The post High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Continuous improvement comes to Microsoft Foundry",
+          "link": "https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-17",
+          "summary": "Discover how continuous improvement in Microsoft Foundry helps organizations evaluate, optimize, and improve agents over time while keeping teams in control. The post Continuous improvement comes to Microsoft Foundry appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Cloud & Platform Engineering"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure). Service lines: Cloud & Platform Engineering."
+            }
+          ]
+        },
+        {
+          "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-13",
+          "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 2,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security, defender)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-12",
+          "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 2,
+              "serviceLines": [
+                "Audit Data & Analytics"
+              ],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security, defender). Service lines: Audit Data & Analytics."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Lessons from 59 Linux Kernel Bug Reports",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-11",
+          "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning AI-generated findings into validated vulnerabilities and upstream fixes. The post Lessons from 59 Linux Kernel Bug Reports appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-11",
+          "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity. The post The global socket: how threat actors are weaponizing GSocket for stealthy C2 appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            }
+          ]
+        },
+        {
+          "title": "Detecting sleeper agents hiding in AI model neurons",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-10",
+          "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than ten neurons to inject a short payload; Microsoft Research has also found that this threat is detectable by frontier agents, which can identify anomalous weight edits. The post Detecting sleeper agents hiding in AI model neurons appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+          "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+          "source": "Microsoft Security Blog",
+          "publishedDate": "2026-11-09",
+          "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code and what they reveal about Rust's safety guarantees. The post FORGE Lab uses agentic tools to identify memory safety issues in Rust appeared first on Microsoft Security Blog .",
+          "industries": [
+            {
+              "name": "Audit",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for audit teams because it strengthens controls, evidence quality, and assurance readiness (security)."
+            }
+          ]
+        },
+        {
+          "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
+          "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-06",
+          "summary": "Microsoft and fal partner to expand video generation in Microsoft Foundry, helping developers bring creative ideas into enterprise applications. The post Building the next generation of multimodal AI experiences with fal in Microsoft Foundry appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            },
+            {
+              "name": "Tax",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (erp)."
+            }
+          ]
+        },
+        {
+          "title": "Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200",
+          "link": "https://azure.microsoft.com/en-us/blog/designing-azure-silicon-on-azure-silicon-eda-workloads-on-cobalt-200/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-05",
+          "summary": "Discover how Microsoft is accelerating electronic design automation (EDA) workloads with Azure Cobalt 200 VMs. Explore early performance results demonstrating faster simulation, verification, and static timing analysis, along with the benefits of scalable cloud infrastructure for silicon design and development. The post Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200 appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 3,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Managed Services Modernization"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (automation, azure, infrastructure). Service lines: Cloud & Platform Engineering, Managed Services Modernization."
+            },
+            {
+              "name": "Advisory",
+              "score": 1,
+              "serviceLines": [
+                "Performance Improvement"
+              ],
+              "whyItMatters": "Useful for advisory teams because it can improve risk, deals, and performance-transformation outcomes (performance). Service lines: Performance Improvement."
+            }
+          ]
+        },
+        {
+          "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
+          "link": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-05",
+          "summary": "AI must be selected, architected, and managed as a continuous business discipline, not a series of isolated projects. The post Stop treating agents as one-off projects and start running them as a continuous discipline appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads",
+          "link": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
+          "source": "Azure Blog",
+          "publishedDate": "2026-11-04",
+          "summary": "Azure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is needed. See what that means for SAP on Azure and other mission-critical workloads. The post Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads appeared first on Microsoft Azure Blog .",
+          "industries": [
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Cloud & Platform Engineering",
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (azure, ai). Service lines: Cloud & Platform Engineering, Data & AI Transformation."
+            },
+            {
+              "name": "Tax",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (sap)."
+            }
+          ]
+        },
+        {
+          "title": "The AI advantage your company can keep",
+          "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+          "source": "Microsoft 365 Blog",
+          "publishedDate": "2026-10-27",
+          "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge. The post The AI advantage your company can keep appeared first on Microsoft Copilot Blog .",
+          "industries": [
+            {
+              "name": "Tax",
+              "score": 2,
+              "serviceLines": [
+                "Tax Technology Transformation"
+              ],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot, erp). Service lines: Tax Technology Transformation."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai, copilot). Service lines: Data & AI Transformation."
+            }
+          ]
+        },
+        {
+          "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+          "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+          "source": "Microsoft 365 Blog",
+          "publishedDate": "2026-10-08",
+          "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action, and move work forward. AI is inverting that model. This shift creates two complementary opportunities: greater individual productivity and organization-wide process transformation. The post Bringing CRM into the flow of work and agents into business process for sales and service teams appeared first on Microsoft Copilot Blog .",
+          "industries": [
+            {
+              "name": "Tax",
+              "score": 2,
+              "serviceLines": [
+                "Tax Technology Transformation"
+              ],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot, sap). Service lines: Tax Technology Transformation."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 2,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai, copilot). Service lines: Data & AI Transformation."
+            },
+            {
+              "name": "Advisory",
+              "score": 1,
+              "serviceLines": [],
+              "whyItMatters": "Useful for advisory teams because it can improve risk, deals, and performance-transformation outcomes (transformation)."
+            }
+          ]
+        },
+        {
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "link": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "source": "Microsoft 365 Blog",
+          "publishedDate": "2026-09-25",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition. The post Introducing the new Copilot with Home, Code and Autopilot appeared first on Microsoft Copilot Blog .",
+          "industries": [
+            {
+              "name": "Tax",
+              "score": 1,
+              "serviceLines": [
+                "Tax Technology Transformation"
+              ],
+              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot). Service lines: Tax Technology Transformation."
+            },
+            {
+              "name": "IT Consulting",
+              "score": 1,
+              "serviceLines": [
+                "Data & AI Transformation"
+              ],
+              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (copilot). Service lines: Data & AI Transformation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
