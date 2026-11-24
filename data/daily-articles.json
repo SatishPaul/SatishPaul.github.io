@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-24T20:44:46.403Z",
+  "generatedAt": "2026-11-24T21:24:40.969Z",
   "dates": [
     {
       "date": "2026-11-24",
-      "scannedAtUtc": "2026-11-24T20:44:46.403Z",
+      "scannedAtUtc": "2026-11-24T21:24:40.969Z",
       "articles": [
         {
           "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
@@ -369,53 +369,6 @@
           ]
         },
         {
-          "title": "Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work",
-          "link": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/",
-          "source": "Microsoft 365 Blog",
-          "publishedDate": "2026-11-17",
-          "summary": "Explore new Microsoft Copilot experiences and capabilities announced at Microsoft Ignite 2026, including Home, Autopilot, Workspaces, and Code. The post Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work appeared first on Microsoft Copilot Blog .",
-          "industries": [
-            {
-              "name": "Tax",
-              "score": 1,
-              "serviceLines": [
-                "Tax Technology Transformation"
-              ],
-              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot). Service lines: Tax Technology Transformation.",
-              "detailedWriteUp": "Explore new Microsoft Copilot experiences and capabilities announced at Microsoft Ignite 2026, including Home, Autopilot, Workspaces, and Code. The post Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work appeared first on Microsoft Copilot Blog . For Tax teams, this announcement can be translated into better compliance execution, stronger evidence continuity, and more scalable tax-technology operating models. Primary fit: Tax Technology Transformation. Key signal: copilot.",
-              "applicationAngles": [
-                "Map Tax Technology Transformation opportunities where workflow automation or control evidence is still manual.",
-                "Use this as a trigger to refine your tax-data governance and close-calendar playbook.",
-                "Package a pilot use case with measurable cycle-time and quality outcomes."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your Tax weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            },
-            {
-              "name": "IT Consulting",
-              "score": 1,
-              "serviceLines": [
-                "Data & AI Transformation"
-              ],
-              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (copilot). Service lines: Data & AI Transformation.",
-              "detailedWriteUp": "Explore new Microsoft Copilot experiences and capabilities announced at Microsoft Ignite 2026, including Home, Autopilot, Workspaces, and Code. The post Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work appeared first on Microsoft Copilot Blog . For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. Primary fit: Data & AI Transformation. Key signal: copilot.",
-              "applicationAngles": [
-                "Apply Data & AI Transformation to cloud, data, and AI delivery accelerators for current clients.",
-                "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
-                "Embed this capability in managed-service offers and modernization sprints."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your IT Consulting weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            }
-          ]
-        },
-        {
           "title": "Security for the agentic era, powered by Microsoft Perception",
           "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
           "source": "Microsoft Security Blog",
@@ -527,72 +480,6 @@
               ],
               "recommendedActions": [
                 "Add this announcement to your IT Consulting weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "What AI at work really costs",
-          "link": "https://www.microsoft.com/en-us/copilot/blog/2026/11/16/what-ai-at-work-really-costs/",
-          "source": "Microsoft 365 Blog",
-          "publishedDate": "2026-11-16",
-          "summary": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work. The post What AI at work really costs appeared first on Microsoft Copilot Blog .",
-          "industries": [
-            {
-              "name": "Tax",
-              "score": 2,
-              "serviceLines": [
-                "Tax Technology Transformation"
-              ],
-              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot, erp). Service lines: Tax Technology Transformation.",
-              "detailedWriteUp": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work. The post What AI at work really costs appeared first on Microsoft Copilot Blog . For Tax teams, this announcement can be translated into better compliance execution, stronger evidence continuity, and more scalable tax-technology operating models. Primary fit: Tax Technology Transformation. Key signal: copilot and erp.",
-              "applicationAngles": [
-                "Map Tax Technology Transformation opportunities where workflow automation or control evidence is still manual.",
-                "Use this as a trigger to refine your tax-data governance and close-calendar playbook.",
-                "Package a pilot use case with measurable cycle-time and quality outcomes."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your Tax weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            },
-            {
-              "name": "IT Consulting",
-              "score": 2,
-              "serviceLines": [
-                "Data & AI Transformation"
-              ],
-              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai, copilot). Service lines: Data & AI Transformation.",
-              "detailedWriteUp": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work. The post What AI at work really costs appeared first on Microsoft Copilot Blog . For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. Primary fit: Data & AI Transformation. Key signal: ai and copilot.",
-              "applicationAngles": [
-                "Apply Data & AI Transformation to cloud, data, and AI delivery accelerators for current clients.",
-                "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
-                "Embed this capability in managed-service offers and modernization sprints."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your IT Consulting weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            },
-            {
-              "name": "Advisory",
-              "score": 1,
-              "serviceLines": [
-                "Performance Improvement"
-              ],
-              "whyItMatters": "Useful for advisory teams because it can improve risk, deals, and performance-transformation outcomes (cost). Service lines: Performance Improvement.",
-              "detailedWriteUp": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work. The post What AI at work really costs appeared first on Microsoft Copilot Blog . For Advisory teams, this can influence risk posture, transformation sequencing, and value-realization choices in client programs. Primary fit: Performance Improvement. Key signal: cost.",
-              "applicationAngles": [
-                "Position Performance Improvement in transformation roadmaps tied to executive KPIs.",
-                "Use this update in value-creation discussions for risk and performance outcomes.",
-                "Create a near-term pilot and define success metrics before scale-out."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your Advisory weekly client update narrative.",
                 "Identify one active engagement where this capability can be piloted immediately.",
                 "Prepare a client conversation starter focused on measurable business outcomes."
               ]
@@ -928,53 +815,6 @@
           ]
         },
         {
-          "title": "Bringing Claude models in Microsoft Copilot into the EU Data Boundary",
-          "link": "https://www.microsoft.com/en-us/copilot/blog/2026/11/05/bringing-claude-models-in-microsoft-copilot-into-the-eu-data-boundary/",
-          "source": "Microsoft 365 Blog",
-          "publishedDate": "2026-11-05",
-          "summary": "Greater model choice, consistent protection. Claude models are coming to the EU Data Boundary in Microsoft Copilot. The post Bringing Claude models in Microsoft Copilot into the EU Data Boundary appeared first on Microsoft Copilot Blog .",
-          "industries": [
-            {
-              "name": "Tax",
-              "score": 1,
-              "serviceLines": [
-                "Tax Technology Transformation"
-              ],
-              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot). Service lines: Tax Technology Transformation.",
-              "detailedWriteUp": "Greater model choice, consistent protection. Claude models are coming to the EU Data Boundary in Microsoft Copilot. The post Bringing Claude models in Microsoft Copilot into the EU Data Boundary appeared first on Microsoft Copilot Blog . For Tax teams, this announcement can be translated into better compliance execution, stronger evidence continuity, and more scalable tax-technology operating models. Primary fit: Tax Technology Transformation. Key signal: copilot.",
-              "applicationAngles": [
-                "Map Tax Technology Transformation opportunities where workflow automation or control evidence is still manual.",
-                "Use this as a trigger to refine your tax-data governance and close-calendar playbook.",
-                "Package a pilot use case with measurable cycle-time and quality outcomes."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your Tax weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            },
-            {
-              "name": "IT Consulting",
-              "score": 1,
-              "serviceLines": [
-                "Data & AI Transformation"
-              ],
-              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (copilot). Service lines: Data & AI Transformation.",
-              "detailedWriteUp": "Greater model choice, consistent protection. Claude models are coming to the EU Data Boundary in Microsoft Copilot. The post Bringing Claude models in Microsoft Copilot into the EU Data Boundary appeared first on Microsoft Copilot Blog . For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. Primary fit: Data & AI Transformation. Key signal: copilot.",
-              "applicationAngles": [
-                "Apply Data & AI Transformation to cloud, data, and AI delivery accelerators for current clients.",
-                "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
-                "Embed this capability in managed-service offers and modernization sprints."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your IT Consulting weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            }
-          ]
-        },
-        {
           "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
           "link": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
           "source": "Azure Blog",
@@ -1050,54 +890,6 @@
           ]
         },
         {
-          "title": "Microsoft Copilot for finance: Purpose-built for the way finance teams work",
-          "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/29/microsoft-copilot-for-finance-purpose-built-for-the-way-finance-teams-work/",
-          "source": "Microsoft 365 Blog",
-          "publishedDate": "2026-10-29",
-          "summary": "Discover Microsoft Copilot for finance, purpose-built skills for accounting, capital markets, and broader finance work. The post Microsoft Copilot for finance: Purpose-built for the way finance teams work appeared first on Microsoft Copilot Blog .",
-          "industries": [
-            {
-              "name": "Tax",
-              "score": 2,
-              "serviceLines": [
-                "Tax Compliance & Provision",
-                "Tax Technology Transformation"
-              ],
-              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (finance, copilot). Service lines: Tax Compliance & Provision, Tax Technology Transformation.",
-              "detailedWriteUp": "Discover Microsoft Copilot for finance, purpose-built skills for accounting, capital markets, and broader finance work. The post Microsoft Copilot for finance: Purpose-built for the way finance teams work appeared first on Microsoft Copilot Blog . For Tax teams, this announcement can be translated into better compliance execution, stronger evidence continuity, and more scalable tax-technology operating models. Primary fit: Tax Compliance & Provision, Tax Technology Transformation. Key signal: finance and copilot.",
-              "applicationAngles": [
-                "Map Tax Compliance & Provision opportunities where workflow automation or control evidence is still manual.",
-                "Use this as a trigger to refine your tax-data governance and close-calendar playbook.",
-                "Package a pilot use case with measurable cycle-time and quality outcomes."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your Tax weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            },
-            {
-              "name": "IT Consulting",
-              "score": 1,
-              "serviceLines": [
-                "Data & AI Transformation"
-              ],
-              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (copilot). Service lines: Data & AI Transformation.",
-              "detailedWriteUp": "Discover Microsoft Copilot for finance, purpose-built skills for accounting, capital markets, and broader finance work. The post Microsoft Copilot for finance: Purpose-built for the way finance teams work appeared first on Microsoft Copilot Blog . For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. Primary fit: Data & AI Transformation. Key signal: copilot.",
-              "applicationAngles": [
-                "Apply Data & AI Transformation to cloud, data, and AI delivery accelerators for current clients.",
-                "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
-                "Embed this capability in managed-service offers and modernization sprints."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your IT Consulting weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            }
-          ]
-        },
-        {
           "title": "The AI advantage your company can keep",
           "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
           "source": "Microsoft 365 Blog",
@@ -1131,53 +923,6 @@
               ],
               "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (ai, copilot). Service lines: Data & AI Transformation.",
               "detailedWriteUp": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge. The post The AI advantage your company can keep appeared first on Microsoft Copilot Blog . For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. Primary fit: Data & AI Transformation. Key signal: ai and copilot.",
-              "applicationAngles": [
-                "Apply Data & AI Transformation to cloud, data, and AI delivery accelerators for current clients.",
-                "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
-                "Embed this capability in managed-service offers and modernization sprints."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your IT Consulting weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Introducing Microsoft Copilot for legal",
-          "link": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246",
-          "source": "Microsoft 365 Blog",
-          "publishedDate": "2026-10-23",
-          "summary": "In legal work, the answer rarely sits neatly in one place. It may depend on precedent, organizational standards, or a regulatory consideration that changes the whole analysis. The post Introducing Microsoft Copilot for legal appeared first on Microsoft Copilot Blog .",
-          "industries": [
-            {
-              "name": "Tax",
-              "score": 1,
-              "serviceLines": [
-                "Tax Technology Transformation"
-              ],
-              "whyItMatters": "Useful for tax teams because it impacts compliance, provision quality, or tax technology workflows (copilot). Service lines: Tax Technology Transformation.",
-              "detailedWriteUp": "In legal work, the answer rarely sits neatly in one place. It may depend on precedent, organizational standards, or a regulatory consideration that changes the whole analysis. The post Introducing Microsoft Copilot for legal appeared first on Microsoft Copilot Blog . For Tax teams, this announcement can be translated into better compliance execution, stronger evidence continuity, and more scalable tax-technology operating models. Primary fit: Tax Technology Transformation. Key signal: copilot.",
-              "applicationAngles": [
-                "Map Tax Technology Transformation opportunities where workflow automation or control evidence is still manual.",
-                "Use this as a trigger to refine your tax-data governance and close-calendar playbook.",
-                "Package a pilot use case with measurable cycle-time and quality outcomes."
-              ],
-              "recommendedActions": [
-                "Add this announcement to your Tax weekly client update narrative.",
-                "Identify one active engagement where this capability can be piloted immediately.",
-                "Prepare a client conversation starter focused on measurable business outcomes."
-              ]
-            },
-            {
-              "name": "IT Consulting",
-              "score": 1,
-              "serviceLines": [
-                "Data & AI Transformation"
-              ],
-              "whyItMatters": "Useful for IT consulting because it can accelerate cloud, data/AI, and managed service transformations (copilot). Service lines: Data & AI Transformation.",
-              "detailedWriteUp": "In legal work, the answer rarely sits neatly in one place. It may depend on precedent, organizational standards, or a regulatory consideration that changes the whole analysis. The post Introducing Microsoft Copilot for legal appeared first on Microsoft Copilot Blog . For IT Consulting teams, this announcement informs architecture, implementation priorities, and managed-service modernization decisions. Primary fit: Data & AI Transformation. Key signal: copilot.",
               "applicationAngles": [
                 "Apply Data & AI Transformation to cloud, data, and AI delivery accelerators for current clients.",
                 "Prioritize architecture and operating-model changes with clear ROI hypotheses.",
